@@ -1,7 +1,7 @@
 {
   plugins: {
     '@fab/input-static': {
-      dir: 'out'
+      dir: 'build'
     },
     '@fab/plugin-render-html': {
       fallback: '/index.html'
