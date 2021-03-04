@@ -35,5 +35,24 @@
     "react-iframe": "^1.8.0",
     "react-share": "^4.3.1",
     "sharethis-reactjs": "^1.6.0"
+  },
+  "devDependencies": {
+    "@bitgenics/fab-upload-cli": "^0.2.4",
+    "@fab/actions": "^1.0.0-rc.9",
+    "@fab/cli": "^1.0.0-rc.9",
+    "@fab/input-nextjs": "^1.0.0-rc.9",
+    "@fab/input-static": "^1.0.0-rc.9",
+    "@fab/plugin-render-html": "^1.0.0-rc.9",
+    "@fab/plugin-rewire-assets": "^1.0.0-rc.9",
+    "@fab/server": "^1.0.0-rc.9.p1",
+    "@storybook/addon-actions": "^6.1.15",
+    "@storybook/addon-essentials": "^6.1.15",
+    "@storybook/addon-links": "^6.1.15",
+    "@storybook/react": "^6.1.15",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "prettier": "^2.2.1"
   }
 }
