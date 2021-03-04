@@ -14,9 +14,7 @@
     "fab:serve": "fab serve fab.zip ",
     "fab-upload": "fab-upload",
     "fab:upload": "fab-upload $LINC_SITE_NAME --apiKey=$LINC_API_KEY",
-    "start": "next start",
-    "storybook": "start-storybook -p 6006",
-    "storybook:build": "build-storybook"
+    "start": "next start"
   },
   "dependencies": {
     "next": "10.0.7",
