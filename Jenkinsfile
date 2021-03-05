@@ -63,7 +63,6 @@ spec:
                         --key-file=${SERVICE_ACCOUNT_JSON}
                     gcloud auth configure-docker
                     npm install
-		    snyk auth ${SNYK_TOKEN}
 		    snyk test
                    
                 '''
