@@ -38,7 +38,7 @@ spec:
         VERSION = "${env.BRANCH_NAME}-${env.BUILD_NUMBER}"
         LINC_SITE_NAME = credentials('LINC_SITE_NAME')
         LINC_API_KEY = credentials('LINC_API_KEY')
-	SNYK_TOKEN = ${secrets.SNYK_TOKEN}
+	SNYK_TOKEN = credentials('SNYK_TOKEN')
     }
 
     options {
