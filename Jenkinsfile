@@ -36,9 +36,9 @@ spec:
         SERVICE_ACCOUNT = credentials('gograbit')
         SERVICE_ACCOUNT_JSON = credentials('jenkins-service-account-json')
         VERSION = "${env.BRANCH_NAME}-${env.BUILD_NUMBER}"
-        LINC_SITE_NAME =credentials('LINC_SITE_NAME')
-        LINC_API_KEY =credentials('LINC_API_KEY')
-	SNYK_TOKEN =credentials('SNYK_TOKEN')
+        LINC_SITE_NAME = credentials('LINC_SITE_NAME')
+        LINC_API_KEY = credentials('LINC_API_KEY')
+	SNYK_TOKEN = credentials('SNYK_TOKEN')
     }
 
     options {
