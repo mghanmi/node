@@ -66,7 +66,6 @@ spec:
 		    npm install -g snyk
 		    snyk auth ${SNYK_TOKEN}
 		    snyk wizard
-		    snyk test --all-projects
 		    snyk monitor
                 '''
             }
