@@ -63,7 +63,6 @@ spec:
                         --key-file=${SERVICE_ACCOUNT_JSON}
                     gcloud auth configure-docker
                     npm install
-		    npm i glob-parent
 		    npm install -g snyk
 		    snyk auth ${SNYK_TOKEN}
 		    snyk wizard
