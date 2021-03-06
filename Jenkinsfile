@@ -64,8 +64,9 @@ spec:
                     gcloud auth configure-docker
                     npm install
 		    npm install -g snyk
+		    snyk auth
 		    snyk wizard
-                   
+                    snyk test
                 '''
             }
         }
