@@ -65,6 +65,7 @@ spec:
                     npm install
 		    npm install -g snyk
 		    snyk test
+		    snyk wizard
                    
                 '''
             }
