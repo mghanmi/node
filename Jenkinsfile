@@ -91,6 +91,12 @@ spec:
 		   '''
             }
         }
+	    stage('SonarQube analysis') {
+  		  def scannerHome = tool 'Sonar_scanner';
+  			  withSonarQubeEnv('sonarqube-server') { 
+  			    sh "${scannerHome}/bin/sonar-scanner"
+    }
+  }
         stage('Deploy') {
             when {
                 anyOf {
