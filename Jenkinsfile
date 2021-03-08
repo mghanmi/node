@@ -39,7 +39,6 @@ spec:
         LINC_SITE_NAME = credentials('LINC_SITE_NAME')
         LINC_API_KEY = credentials('LINC_API_KEY')
 	SNYK_TOKEN = credentials('SNYK_TOKEN')
-	sonar.projectKey=my:project
     }
 
     options {
