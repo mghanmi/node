@@ -13,7 +13,7 @@ labels:
 spec:
   containers:
   - name: build
-    image: gcr.io/gograbit-ca/npm:3.0.0
+    image: gcr.io/gograbit-ca/sonar:1.0.0
     command:
     - cat
     tty: true
