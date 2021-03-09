@@ -93,7 +93,7 @@ spec:
         }
 	    
 	    stage('Scanning-code'){
-	     	def scannerHome = tool 'sonarr'
+	     	def scannerHome = tool 'sonarr' ;
 		    steps{   withSonarSubeEnv('sonarqube-server'){
 			    sh "${scannerHome}/bin/sonar-scanner --version "		    
 		    }
