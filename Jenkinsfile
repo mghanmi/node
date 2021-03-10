@@ -93,13 +93,13 @@ spec:
 	    
 
 	stage('Scanning-code'){
-	   def scannerHome = tool "sonar-scanner" ;
+		steps {   def scannerHome = tool "sonar-scanner" ;
 	
 			    withSonarQubeEnv('sonarserver') {
     		  	sh "${scannerHome}/sonar-scanner-4.6.0.2311/bin/sonar-scanner"          
         		 }
-	}
-			    
+		}
+	}    
 			    
 	    
         stage('Deploy') {
