@@ -99,7 +99,7 @@ spec:
 			script {def scannerHome = tool "sonar-scanner" 
 			       }
 			    withSonarQubeEnv('sonarserver') {
-    		  	sh "${scannerHome}/sonar-scanner-4.6.0.2311/bin/sonar-scanner -Dsonar.host.url=https://sonar.gograbit-gke.gograbit.ca -Dsonar.projectName=node -Dsonar.projectKey=node:app -Dsonar.sources=. -Dsonar.projectBaseDir=/home/jenkins/agent/workspace/mgh-DevOps-pipeline_master"          
+    		  	sh "${scannerHome}/sonar-scanner-4.6.0.2311/bin/sonar-scanner -Dsonar.projectKey=Node  -Dsonar.sources=. -Dsonar.host.url=https://sonar.gograbit-gke.gograbit.ca -Dsonar.login=6589ed3daf21a9f5fb60658744ec19332131f356"          
         		 }
 		}
 	}    
