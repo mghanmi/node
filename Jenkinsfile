@@ -1,4 +1,5 @@
 def namespace = env.JOB_NAME.split('/')[0]
+def scannerHome = tool "sonar-scanner" 
 pipeline {
     agent { 
         kubernetes {
@@ -93,7 +94,7 @@ spec:
 	    
 
 	stage('Scanning-code'){
-		steps {   def scannerHome = tool "sonar-scanner" ;
+		steps {   
 	
 			    withSonarQubeEnv('sonarserver') {
     		  	sh "${scannerHome}/sonar-scanner-4.6.0.2311/bin/sonar-scanner"          
