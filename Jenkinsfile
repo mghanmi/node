@@ -98,7 +98,7 @@ spec:
 			    withSonarQubeEnv('sonarserver') {
     		  	sh "${scannerHome}/sonar-scanner-4.6.0.2311/bin/sonar-scanner"          
         		 }
-		
+	}
 			    
 			    
 	    
