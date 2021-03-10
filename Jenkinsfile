@@ -92,17 +92,18 @@ spec:
         }
 	    
 
-	stage('Scanning-code'){
-		
-
-		steps {   
-			script { def scannerHome = tool 'SonarQube Scanner 4.6.0.2311' ;
-			       }
-			    withSonarQubeEnv('sonarserver') {
-    		  	sh "${scannerHome}/sonar-scanner-4.6.0.2311/bin/sonar-scanner -Dsonar.projectKey=Node  -Dsonar.sources=. -Dsonar.host.url=https://sonar.gograbit-gke.gograbit.ca -Dsonar.login=6589ed3daf21a9f5fb60658744ec19332131f356"          
-        		 }
-		}
-	}    
+	    
+	    
+	    stage("SonarQube Analysis") {
+      agent any
+      steps {
+        script {
+            def scannerHome = tool 'SonarQube Scanner 4.6.0.2311';
+            withSonarQubeEnv("sonarserver") {
+              sh "${scannerHome}/bin/sonar-scanner"
+            }
+        }
+      }
 			    
 	    
         stage('Deploy') {
