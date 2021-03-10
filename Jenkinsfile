@@ -93,8 +93,8 @@ spec:
         }
 	    
 	    stage('Scanning-code'){
-		    steps{ withSonarQubeEnv('sonarqube-server') {
-    		  sh "${scannerHome}/sonar-scanner-4.2.0.1873/bin/sonar-scanner"          
+		    steps{ withSonarQubeEnv('sonarserver') {
+    		  sh "${scannerHome}/sonar-scanner-4.6.0.2311/bin/sonar-scanner"          
  		   }
 			 }
 	    
