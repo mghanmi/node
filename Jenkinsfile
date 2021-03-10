@@ -95,16 +95,15 @@ spec:
 	    
 	    
 	    stage("SonarQube Analysis") {
-      agent any
-      steps {
-        script {
-            def scannerHome = tool 'SonarQube Scanner 4.6.0.2311';
-            withSonarQubeEnv("sonarserver") {
+	      steps {
+        	script {
+       		     def scannerHome = tool 'SonarQube Scanner 4.6.0.2311';
+         		   withSonarQubeEnv("sonarserver") {
               sh "${scannerHome}/bin/sonar-scanner"
             }
         }
       }
-			    
+	    }			    
 	    
         stage('Deploy') {
             when {
