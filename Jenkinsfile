@@ -131,13 +131,7 @@ spec:
             archiveArtifacts artifacts: '**', fingerprint: true
             
         }
-			success {
-              archiveArtifacts(
-                artifacts: "${env.JOB_BASE_NAME}_image/*.*",
-                fingerprint: true,
-              )
-          }
-	
+		
     }
 
 }
