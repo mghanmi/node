@@ -103,7 +103,14 @@ spec:
             }
         }
       }
-	    }			    
+	    }		
+	    
+	    stage("Sonarqube Quality Gate"){
+		    steps{
+		          waitForQualityGate abortPipeline: true
+		    
+		    }
+	    }
 	    
         stage('Deploy') {
             when {
