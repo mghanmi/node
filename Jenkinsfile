@@ -70,6 +70,7 @@ spec:
                 '''
             }
         }
+	    
         stage('Push to Registry') {
             when {
                 anyOf {
@@ -90,20 +91,18 @@ spec:
 		   '''
             }
         }
-	    
 
 	    
-	    
-	       stage("SonarQube Analysis") {
+	   stage("SonarQube Analysis") {
 	      steps {
         	script {
        		     def scannerHome = tool 'SonarQube Scanner 4.6.0.2311';
          		   withSonarQubeEnv("sonarserver") {
               sh "${scannerHome}/bin/sonar-scanner  -Dsonar.projectKey=Node "
             }
-        }
+         }
       }
-	    }		
+   }		
 	    
 	    stage("Sonarqube Quality Gate"){
 		    steps{
@@ -134,5 +133,4 @@ spec:
             }
         }
     }
-	
 }
