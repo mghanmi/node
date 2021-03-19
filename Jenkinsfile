@@ -134,12 +134,5 @@ spec:
             }
         }
     }
-	post {
-        always {
-            archiveArtifacts artifacts: '**', fingerprint: true
-            
-        }
-		
-    }
-
+	
 }
