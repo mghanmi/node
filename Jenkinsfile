@@ -97,9 +97,11 @@ spec:
 	      steps {
         	script {
        		     def scannerHome = tool 'SonarQube Scanner 4.6.0.2311';
+			withGradle("Gradle 6.8.3"){
          		   withSonarQubeEnv("sonarserver") {
-              sh "${scannerHome}/bin/sonar-scanner  -Dsonar.projectKey=Node "
+              sh "./graadlew sonarqube "
             }
+	   }
          }
       }
    }		
