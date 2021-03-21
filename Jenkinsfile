@@ -98,7 +98,7 @@ spec:
         	script {
        		     def scannerHome = tool 'SonarQube Scanner 4.6.0.2311';
          		   withSonarQubeEnv("sonarserver") {
-              sh "./graadle sonarqube "
+              sh "./gradle sonarqube "
             }
          }
       }
