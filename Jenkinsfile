@@ -12,7 +12,7 @@ labels:
 spec:
   containers:
   - name: build
-    image: gcr.io/gograbit-ca/sonar:1.0.0
+    image: gcr.io/gograbit-ca/gradle:1.0.0
     command:
     - cat
     tty: true
@@ -97,11 +97,9 @@ spec:
 	      steps {
         	script {
        		     def scannerHome = tool 'SonarQube Scanner 4.6.0.2311';
-			withGradle("Gradle 6.8.3"){
          		   withSonarQubeEnv("sonarserver") {
-              sh "./graadlew sonarqube "
+              sh "./graadle sonarqube "
             }
-	   }
          }
       }
    }		
