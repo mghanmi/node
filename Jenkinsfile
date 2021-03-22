@@ -98,8 +98,7 @@ spec:
         	script {
        		     def scannerHome = tool 'SonarQube Scanner 4.6.0.2311';
          		   withSonarQubeEnv("sonarserver") {
-              sh ''' ${scannerHome}/bin/sonar-scanner  -Dsonar.projectKey=ascd
-	      '''
+              sh ''' ${scannerHome}/bin/sonar-scanner  -Dsonar.projectKey=Node	      '''
             }
          }
       }
