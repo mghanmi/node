@@ -99,7 +99,7 @@ spec:
        		     def scannerHome = tool 'SonarQube Scanner 4.6.0.2311';
          		   withSonarQubeEnv("sonarserver") {
               sh '''/opt/gradle/bin/gradle wrapper --gradle-version 6.8.3 
-	            /opt/gradle/bin/gradlew sonarqube
+	            ./gradlew sonarqube
 	      '''
             }
          }
